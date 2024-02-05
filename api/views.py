@@ -8,6 +8,7 @@ import random
 
 @api_view(['POST'])
 def shorten_url(request):
+    print('method')
     if request.method == 'POST':
         original_url = request.data.get('original_url')
         if original_url:
